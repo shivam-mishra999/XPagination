@@ -17,6 +17,7 @@ export default function Pagination() {
         .then((data) => setData(data))
         .catch((error) => {
             console.log("Error in fetching data: ", error);
+            alert('Failed to fetch data');
         },[]);
     })
     
